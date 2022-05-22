@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:gravity="end"
+            android:textSize="@dimen/create_fragment_text_size"
+            android:text="@string/lblTodoTitle" />
+
+        <EditText
+            android:id="@+id/etTodoTitle"
+            android:width="@dimen/create_todo_general_size"
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:gravity="end"
+            android:textSize="@dimen/create_fragment_text_size"
+            android:text="@string/lblTodoPriority" />
+        <Spinner
+            android:id="@+id/spnrTodoPriority"
+            android:width="@dimen/create_todo_general_size" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:gravity="end"
+            android:textSize="@dimen/create_fragment_text_size"
+            android:text="@string/lblTodoDueDate" />
+
+        <TextView
+            android:id="@+id/tvTodoDueDate"
+            android:width="@dimen/create_todo_general_size"
+            android:gravity="center"
+            android:textSize="@dimen/create_fragment_text_size" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:gravity="end"
+            android:textSize="@dimen/create_fragment_text_size"
+            android:text="@string/lblTodoDescription" />
+
+        <EditText
+            android:id="@+id/etTodoDescription"
+            android:width="@dimen/create_todo_general_size"
+            android:text=""
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+    </TableRow>
+
+    <TableRow>
+            <Button
+                android:id="@+id/btnCreateTodo"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:gravity="center|end"
+                android:textColor="@color/CustomDarkBlue"
+                android:text="@string/btnOk"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/btnCancelCreateTodo"
+                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:gravity="center|start"
+                android:textColor="@color/CustomDarkBlue"
+                android:text="@string/btnCancel"
+                style="?android:attr/buttonBarButtonStyle" />
+
+    </TableRow>
+
+</TableLayout>
